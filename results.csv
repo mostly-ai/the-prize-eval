@@ -38,9 +38,9 @@ SEQU1,Gandagorn,andrey,6,,synthetic-SEQU1-run6.csv.gz,
 SEQU2,Benels,abhishek,1,,synthetic-SEQU2-run1.csv.gz,
 SEQU2,Benels,abhishek,2,,synthetic-SEQU2-run2.csv.gz,
 SEQU2,Benels,abhishek,3,,synthetic-SEQU2-run3.csv.gz,
-SEQU2,Benels,michi,4,,synthetic-SEQU2-run4.csv.gz,
-SEQU2,Benels,michi,5,,synthetic-SEQU2-run5.csv.gz,
-SEQU2,Benels,michi,6,,synthetic-SEQU2-run6.csv.gz,
+SEQU2,Benels,michi,4,g5.2xlarge,synthetic-SEQU2-run4.csv.gz,190
+SEQU2,Benels,michi,5,g5.2xlarge,synthetic-SEQU2-run5.csv.gz,190
+SEQU2,Benels,michi,6,g5.2xlarge,synthetic-SEQU2-run6.csv.gz,190
 SEQU3,EugenioTL,shripad,1,,synthetic-SEQU3-run1.csv.gz,
 SEQU3,EugenioTL,shripad,2,,synthetic-SEQU3-run2.csv.gz,
 SEQU3,EugenioTL,shripad,3,,synthetic-SEQU3-run3.csv.gz,
