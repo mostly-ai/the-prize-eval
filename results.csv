@@ -2,7 +2,7 @@ task,participant,judge,run_id,server_type,file,runtime_s
 FLAT1,Gandagorn,abhishek,1,,synthetic-FLAT1-run1.csv.gz,
 FLAT1,Gandagorn,abhishek,2,,synthetic-FLAT1-run2.csv.gz,
 FLAT1,Gandagorn,abhishek,3,,synthetic-FLAT1-run3.csv.gz,
-FLAT1,Gandagorn,michi,4,,synthetic-FLAT1-run4.csv.gz,8676
+FLAT1,Gandagorn,michi,4,g5.2xlarge,synthetic-FLAT1-run4.csv.gz,8676
 FLAT1,Gandagorn,michi,5,,synthetic-FLAT1-run5.csv.gz,
 FLAT1,Gandagorn,michi,6,,synthetic-FLAT1-run6.csv.gz,
 FLAT2,Tecnarca,shripad,1,,synthetic-FLAT2-run1.csv.gz,
