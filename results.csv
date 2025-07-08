@@ -8,9 +8,9 @@ FLAT1,Gandagorn,michi,6,g5.2xlarge,synthetic-FLAT1-run6.csv.gz,8568
 FLAT2,Tecnarca,shripad,1,,synthetic-FLAT2-run1.csv.gz,
 FLAT2,Tecnarca,shripad,2,,synthetic-FLAT2-run2.csv.gz,
 FLAT2,Tecnarca,shripad,3,,synthetic-FLAT2-run3.csv.gz,
-FLAT2,Tecnarca,mario,4,,synthetic-FLAT2-run4.csv.gz,
-FLAT2,Tecnarca,mario,5,,synthetic-FLAT2-run5.csv.gz,
-FLAT2,Tecnarca,mario,6,,synthetic-FLAT2-run6.csv.gz,
+FLAT2,Tecnarca,mario,4,,synthetic-FLAT2-run4.csv.gz,12959
+FLAT2,Tecnarca,mario,5,,synthetic-FLAT2-run5.csv.gz,12253
+FLAT2,Tecnarca,mario,6,,synthetic-FLAT2-run6.csv.gz,12275
 FLAT3,muellermarkus,suhas,1,,synthetic-FLAT3-run1.csv.gz,
 FLAT3,muellermarkus,suhas,2,,synthetic-FLAT3-run2.csv.gz,
 FLAT3,muellermarkus,suhas,3,,synthetic-FLAT3-run3.csv.gz,
