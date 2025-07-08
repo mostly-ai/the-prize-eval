@@ -32,9 +32,9 @@ FLAT5,Benels,mario,6,,synthetic-FLAT5-run6.csv.gz,
 SEQU1,Gandagorn,suhas,1,,synthetic-SEQU1-run1.csv.gz,
 SEQU1,Gandagorn,suhas,2,,synthetic-SEQU1-run2.csv.gz,
 SEQU1,Gandagorn,suhas,3,,synthetic-SEQU1-run3.csv.gz,
-SEQU1,Gandagorn,andrey,4,,synthetic-SEQU1-run4.csv.gz,
-SEQU1,Gandagorn,andrey,5,,synthetic-SEQU1-run5.csv.gz,
-SEQU1,Gandagorn,andrey,6,,synthetic-SEQU1-run6.csv.gz,
+SEQU1,Gandagorn,andrey,4,,synthetic-SEQU1-run4.csv.gz,4048
+SEQU1,Gandagorn,andrey,5,,synthetic-SEQU1-run5.csv.gz,4063
+SEQU1,Gandagorn,andrey,6,,synthetic-SEQU1-run6.csv.gz,3803
 SEQU2,Benels,abhishek,1,,synthetic-SEQU2-run1.csv.gz,
 SEQU2,Benels,abhishek,2,,synthetic-SEQU2-run2.csv.gz,
 SEQU2,Benels,abhishek,3,,synthetic-SEQU2-run3.csv.gz,
