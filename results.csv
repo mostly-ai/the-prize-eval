@@ -26,8 +26,8 @@ FLAT4,EugenioTL,michi,6,,synthetic-FLAT4-run6.csv.gz,
 FLAT5,Benels,shripad,1,,synthetic-FLAT5-run1.csv.gz,
 FLAT5,Benels,shripad,2,,synthetic-FLAT5-run2.csv.gz,
 FLAT5,Benels,shripad,3,,synthetic-FLAT5-run3.csv.gz,
-FLAT5,Benels,mario,4,,synthetic-FLAT5-run4.csv.gz,
-FLAT5,Benels,mario,5,,synthetic-FLAT5-run5.csv.gz,
+FLAT5,Benels,mario,4,,synthetic-FLAT5-run4.csv.gz,6848
+FLAT5,Benels,mario,5,,synthetic-FLAT5-run5.csv.gz,6791
 FLAT5,Benels,mario,6,,synthetic-FLAT5-run6.csv.gz,
 SEQU1,Gandagorn,suhas,1,,synthetic-SEQU1-run1.csv.gz,
 SEQU1,Gandagorn,suhas,2,,synthetic-SEQU1-run2.csv.gz,
