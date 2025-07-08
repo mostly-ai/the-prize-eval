@@ -20,9 +20,9 @@ FLAT3,muellermarkus,andrey,6,g5.2xlarge,synthetic-FLAT3-run6.csv.gz,Fail
 FLAT4,EugenioTL,abhishek,1,,synthetic-FLAT4-run1.csv.gz,
 FLAT4,EugenioTL,abhishek,2,,synthetic-FLAT4-run2.csv.gz,
 FLAT4,EugenioTL,abhishek,3,,synthetic-FLAT4-run3.csv.gz,
-FLAT4,EugenioTL,michi,4,,synthetic-FLAT4-run4.csv.gz,
-FLAT4,EugenioTL,michi,5,,synthetic-FLAT4-run5.csv.gz,
-FLAT4,EugenioTL,michi,6,,synthetic-FLAT4-run6.csv.gz,
+FLAT4,EugenioTL,michi,4,g5.2xlarge,synthetic-FLAT4-run4.csv.gz,6938
+FLAT4,EugenioTL,michi,5,g5.2xlarge,synthetic-FLAT4-run5.csv.gz,6911
+FLAT4,EugenioTL,michi,6,g5.2xlarge,synthetic-FLAT4-run6.csv.gz,6925
 FLAT5,Benels,shripad,1,,synthetic-FLAT5-run1.csv.gz,
 FLAT5,Benels,shripad,2,,synthetic-FLAT5-run2.csv.gz,
 FLAT5,Benels,shripad,3,,synthetic-FLAT5-run3.csv.gz,
