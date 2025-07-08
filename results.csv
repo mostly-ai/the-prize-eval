@@ -8,9 +8,9 @@ FLAT1,Gandagorn,michi,6,g5.2xlarge,synthetic-FLAT1-run6.csv.gz,8568
 FLAT2,Tecnarca,shripad,1,,synthetic-FLAT2-run1.csv.gz,
 FLAT2,Tecnarca,shripad,2,,synthetic-FLAT2-run2.csv.gz,
 FLAT2,Tecnarca,shripad,3,,synthetic-FLAT2-run3.csv.gz,
-FLAT2,Tecnarca,mario,4,,synthetic-FLAT2-run4.csv.gz,12959
-FLAT2,Tecnarca,mario,5,,synthetic-FLAT2-run5.csv.gz,12253
-FLAT2,Tecnarca,mario,6,,synthetic-FLAT2-run6.csv.gz,12275
+FLAT2,Tecnarca,mario,4,g5.2xlarge,synthetic-FLAT2-run4.csv.gz,12959
+FLAT2,Tecnarca,mario,5,g5.2xlarge,synthetic-FLAT2-run5.csv.gz,12253
+FLAT2,Tecnarca,mario,6,g5.2xlarge,synthetic-FLAT2-run6.csv.gz,12275
 FLAT3,muellermarkus,suhas,1,,synthetic-FLAT3-run1.csv.gz,6870
 FLAT3,muellermarkus,suhas,2,,synthetic-FLAT3-run2.csv.gz,
 FLAT3,muellermarkus,suhas,3,,synthetic-FLAT3-run3.csv.gz,
@@ -26,9 +26,9 @@ FLAT4,EugenioTL,michi,6,g5.2xlarge,synthetic-FLAT4-run6.csv.gz,6925
 FLAT5,Benels,shripad,1,,synthetic-FLAT5-run1.csv.gz,
 FLAT5,Benels,shripad,2,,synthetic-FLAT5-run2.csv.gz,
 FLAT5,Benels,shripad,3,,synthetic-FLAT5-run3.csv.gz,
-FLAT5,Benels,mario,4,,synthetic-FLAT5-run4.csv.gz,6848
-FLAT5,Benels,mario,5,,synthetic-FLAT5-run5.csv.gz,6791
-FLAT5,Benels,mario,6,,synthetic-FLAT5-run6.csv.gz,6900
+FLAT5,Benels,mario,4,g5.2xlarge,synthetic-FLAT5-run4.csv.gz,6848
+FLAT5,Benels,mario,5,g5.2xlarge,synthetic-FLAT5-run5.csv.gz,6791
+FLAT5,Benels,mario,6,g5.2xlarge,synthetic-FLAT5-run6.csv.gz,6900
 SEQU1,Gandagorn,suhas,1,,synthetic-SEQU1-run1.csv.gz,
 SEQU1,Gandagorn,suhas,2,,synthetic-SEQU1-run2.csv.gz,
 SEQU1,Gandagorn,suhas,3,,synthetic-SEQU1-run3.csv.gz,
