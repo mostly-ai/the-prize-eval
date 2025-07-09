@@ -29,7 +29,7 @@ FLAT5,Benels,shripad,3,,synthetic-FLAT5-run3.csv.gz,
 FLAT5,Benels,mario,4,g5.2xlarge,synthetic-FLAT5-run4.csv.gz,6848
 FLAT5,Benels,mario,5,g5.2xlarge,synthetic-FLAT5-run5.csv.gz,6791
 FLAT5,Benels,mario,6,g5.2xlarge,synthetic-FLAT5-run6.csv.gz,6900
-SEQU1,Gandagorn,suhas,1,,synthetic-SEQU1-run1.csv.gz,
+SEQU1,Gandagorn,suhas,1,,synthetic-SEQU1-run1.csv.gz,3852
 SEQU1,Gandagorn,suhas,2,,synthetic-SEQU1-run2.csv.gz,
 SEQU1,Gandagorn,suhas,3,,synthetic-SEQU1-run3.csv.gz,
 SEQU1,Gandagorn,andrey,4,g5.2xlarge,synthetic-SEQU1-run4.csv.gz,4048
