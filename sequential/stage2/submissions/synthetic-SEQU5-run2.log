@@ -1,0 +1,209 @@
+✅ Using local mostlyai source from: /home/ubuntu/filomba01/mostly-ai-competition2
+✅ Successfully imported engine module
+🚀 Starting best configuration run...
+📊 Model type: sequential
+📁 Input file: sequential-training.csv
+🎯 Sample size: 20000
+💾 Workspace: ./sequential_training
+
+📖 Loading training data...
+✅ Loaded 154456 rows with 11 columns
+📋 Columns: ['group_id', 'alice', 'david', 'emily', 'jacob', 'james', 'john', 'mike', 'lucas', 'mary', 'sarah']
+🗑️  Cleaning existing workspace: sequential_training
+[2025-07-09 08:04:55,506] INFO   : Global random_state set to `46`
+🎲 Set random seed to: 46
+
+🔀 Splitting data...
+[2025-07-09 08:04:55,507] INFO   : SPLIT started
+[2025-07-09 08:04:55,511] INFO   : create `sequential_training/OriginalData/tgt-data`
+[2025-07-09 08:04:55,511] INFO   : create `sequential_training/OriginalData/tgt-meta`
+[2025-07-09 08:04:55,511] INFO   : create `sequential_training/OriginalData/ctx-data`
+[2025-07-09 08:04:55,511] INFO   : create `sequential_training/OriginalData/ctx-meta`
+[2025-07-09 08:04:55,511] INFO   : model_type='TABULAR'
+[2025-07-09 08:04:55,511] INFO   : tgt_encoding_types={'mary': 'TABULAR_NUMERIC_AUTO', 'david': 'TABULAR_NUMERIC_AUTO', 'jacob': 'TABULAR_NUMERIC_AUTO', 'emily': 'TABULAR_CATEGORICAL', 'alice': 'TABULAR_CATEGORICAL', 'lucas': 'TABULAR_NUMERIC_AUTO', 'james': 'TABULAR_NUMERIC_AUTO', 'mike': 'TABULAR_NUMERIC_AUTO', 'sarah': 'TABULAR_NUMERIC_AUTO', 'john': 'TABULAR_CATEGORICAL'}
+[2025-07-09 08:04:55,672] INFO   : SPLIT finished in 0.17s
+✅ Data split completed
+
+🔍 Analyzing data...
+[2025-07-09 08:04:55,672] INFO   : ANALYZE started
+[2025-07-09 08:04:55,672] INFO   : create `sequential_training/ModelStore/tgt-stats`
+[2025-07-09 08:04:55,672] INFO   : create `sequential_training/ModelStore/ctx-stats`
+[2025-07-09 08:04:55,673] INFO   : analyzing 2 partitions in parallel
+[2025-07-09 08:05:03,144] INFO   : analyzed target partition 000000-trn (138944, 11)
+[2025-07-09 08:05:03,152] INFO   : analyzed context partition 000000-trn (18000, 1)
+[2025-07-09 08:05:03,681] INFO   : analyzed target partition 000000-val (15512, 11)
+[2025-07-09 08:05:03,683] INFO   : analyzed context partition 000000-val (2000, 1)
+[2025-07-09 08:05:03,684] INFO   : combine partition statistics
+[2025-07-09 08:05:03,689] INFO   : value_protection = True
+[2025-07-09 08:05:03,690] INFO   : analyzed column `mary`: TABULAR_NUMERIC_DISCRETE {'cat': 54}
+[2025-07-09 08:05:03,690] INFO   : analyzed column `david`: TABULAR_NUMERIC_DISCRETE {'cat': 44}
+[2025-07-09 08:05:03,690] INFO   : analyzed column `jacob`: TABULAR_NUMERIC_DISCRETE {'cat': 38}
+[2025-07-09 08:05:03,690] INFO   : analyzed column `emily`: TABULAR_CATEGORICAL {'cat': 7}
+[2025-07-09 08:05:03,690] INFO   : analyzed column `alice`: TABULAR_CATEGORICAL {'cat': 14}
+[2025-07-09 08:05:03,690] INFO   : analyzed column `lucas`: TABULAR_NUMERIC_DISCRETE {'cat': 61}
+[2025-07-09 08:05:03,691] INFO   : analyzed column `james`: TABULAR_NUMERIC_DISCRETE {'cat': 64}
+[2025-07-09 08:05:03,691] INFO   : analyzed column `mike`: TABULAR_NUMERIC_DISCRETE {'cat': 24}
+[2025-07-09 08:05:03,691] INFO   : analyzed column `sarah`: TABULAR_NUMERIC_DISCRETE {'cat': 24}
+[2025-07-09 08:05:03,691] INFO   : analyzed column `john`: TABULAR_CATEGORICAL {'cat': 10}
+[2025-07-09 08:05:03,691] INFO   : analyzed 20,000 records: 18,000 training / 2,000 validation
+[2025-07-09 08:05:03,692] INFO   : is_sequential: True
+[2025-07-09 08:05:03,692] INFO   : write statistics to `sequential_training/ModelStore/tgt-stats/stats.json`
+[2025-07-09 08:05:03,693] INFO   : value_protection = True
+[2025-07-09 08:05:03,693] INFO   : write statistics to `sequential_training/ModelStore/ctx-stats/stats.json`
+[2025-07-09 08:05:03,693] INFO   : ANALYZE finished in 8.02s
+✅ Data analysis completed
+
+🔢 Encoding data...
+[2025-07-09 08:05:03,697] INFO   : ENCODE_TABULAR started
+[2025-07-09 08:05:03,697] INFO   : create `sequential_training/OriginalData/encoded-data`
+[2025-07-09 08:05:03,697] INFO   : clean `sequential_training/OriginalData/encoded-data`
+[2025-07-09 08:05:03,697] INFO   : clean `sequential_training/OriginalData/encoded-data`
+[2025-07-09 08:05:06,140] INFO   : encoded partition part.000000-trn.parquet (18000, 13)
+[2025-07-09 08:05:06,438] INFO   : encoded partition part.000000-val.parquet (2000, 13)
+[2025-07-09 08:05:06,442] INFO   : ENCODE_TABULAR finished in 2.75s
+✅ Data encoding completed
+
+🏋️  Training model...
+[2025-07-09 08:05:08,845] INFO   : TRAIN_TABULAR started
+[2025-07-09 08:05:08,851] INFO   : numpy=2.2.6, pandas=2.2.3
+[2025-07-09 08:05:08,852] INFO   : torch=2.7.0, opacus=1.5.4
+[2025-07-09 08:05:08,852] INFO   : device=device(type='cuda')
+[2025-07-09 08:05:08,853] INFO   : is_sequential=True
+[2025-07-09 08:05:08,853] INFO   : max_training_time=864000.0s
+[2025-07-09 08:05:08,853] INFO   : max_epochs=1000 -> max_epochs=400 due to small sample size
+[2025-07-09 08:05:08,853] INFO   : model_size=<ModelSize.M: 'M'>
+[2025-07-09 08:05:08,853] INFO   : enable_flexible_generation=False
+[2025-07-09 08:05:08,853] INFO   : with_dp=False
+[2025-07-09 08:05:08,853] INFO   : model_state_strategy=<ModelStateStrategy.reset: 'RESET'>
+[2025-07-09 08:05:08,853] INFO   : max_sequence_window=np.int64(10)
+[2025-07-09 08:05:08,853] INFO   : create training model
+[2025-07-09 08:05:09,049] INFO   : model class: SequentialModel
+[2025-07-09 08:05:09,049] INFO   : model weights not found; change strategy from ModelStateStrategy.reset to RESET
+[2025-07-09 08:05:09,049] INFO   : model_state_strategy=<ModelStateStrategy.reset: 'RESET'>
+[2025-07-09 08:05:09,049] INFO   : remove existing checkpoint files
+[2025-07-09 08:05:09,049] INFO   : start training progress from epoch=0.0, steps=0
+[2025-07-09 08:05:09,073] INFO   : no_of_model_params=np.int64(1589346)
+[2025-07-09 08:05:09,201] INFO   : trn_cnt=18000, val_cnt=2000
+[2025-07-09 08:05:09,202] INFO   : len(tgt_sub_columns)=13, len(ctxflt_sub_columns)=0, len(ctxseq_sub_columns)=0
+[2025-07-09 08:05:09,202] INFO   : tgt_cardinalities_deciles=[np.int64(7), np.int64(10), np.int64(10), np.int64(11), np.int64(11), np.int64(24), np.int64(24), np.int64(38), np.int64(44), np.int64(54), np.int64(64)]
+[2025-07-09 08:05:09,202] INFO   : trn_batch_size=1024, val_batch_size=512
+[2025-07-09 08:05:09,202] INFO   : trn_steps=17, val_steps=1
+[2025-07-09 08:05:09,202] INFO   : batch_size=1024, gradient_accumulation_steps=1, initial_lr=np.float64(0.00566)
+[2025-07-09 08:05:13,400] INFO   : {'epoch': 0.06, 'is_checkpoint': 0, 'steps': 1, 'samples': 1024, 'trn_loss': 35.1842, 'val_loss': None, 'total_time': 0.6, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:05:17,319] INFO   : {'epoch': 1.0, 'is_checkpoint': 1, 'steps': 17, 'samples': 17408, 'trn_loss': 25.8754, 'val_loss': 21.4636, 'total_time': 4.5, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:05:21,371] INFO   : {'epoch': 2.0, 'is_checkpoint': 1, 'steps': 34, 'samples': 34384, 'trn_loss': 20.2318, 'val_loss': 18.6484, 'total_time': 8.6, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:05:25,435] INFO   : {'epoch': 3.0, 'is_checkpoint': 1, 'steps': 51, 'samples': 51360, 'trn_loss': 18.4555, 'val_loss': 17.4043, 'total_time': 12.7, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:05:29,483] INFO   : {'epoch': 4.0, 'is_checkpoint': 1, 'steps': 68, 'samples': 68336, 'trn_loss': 17.5143, 'val_loss': 16.7245, 'total_time': 16.7, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:05:33,545] INFO   : {'epoch': 5.0, 'is_checkpoint': 1, 'steps': 85, 'samples': 85312, 'trn_loss': 16.9327, 'val_loss': 16.2532, 'total_time': 20.8, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:05:37,603] INFO   : {'epoch': 6.0, 'is_checkpoint': 1, 'steps': 102, 'samples': 102288, 'trn_loss': 16.4894, 'val_loss': 15.912, 'total_time': 24.8, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:05:41,670] INFO   : {'epoch': 7.0, 'is_checkpoint': 1, 'steps': 119, 'samples': 119264, 'trn_loss': 16.1552, 'val_loss': 15.6532, 'total_time': 28.9, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:05:45,746] INFO   : {'epoch': 8.0, 'is_checkpoint': 1, 'steps': 136, 'samples': 136240, 'trn_loss': 15.864, 'val_loss': 15.4323, 'total_time': 33.0, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:05:49,822] INFO   : {'epoch': 9.0, 'is_checkpoint': 1, 'steps': 153, 'samples': 153216, 'trn_loss': 15.6479, 'val_loss': 15.264, 'total_time': 37.0, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:05:53,885] INFO   : {'epoch': 10.0, 'is_checkpoint': 1, 'steps': 170, 'samples': 170192, 'trn_loss': 15.4454, 'val_loss': 15.1335, 'total_time': 41.1, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:05:57,953] INFO   : {'epoch': 11.0, 'is_checkpoint': 1, 'steps': 187, 'samples': 187168, 'trn_loss': 15.2866, 'val_loss': 15.0083, 'total_time': 45.2, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:06:02,027] INFO   : {'epoch': 12.0, 'is_checkpoint': 1, 'steps': 204, 'samples': 204144, 'trn_loss': 15.1528, 'val_loss': 14.8885, 'total_time': 49.3, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:06:06,096] INFO   : {'epoch': 13.0, 'is_checkpoint': 1, 'steps': 221, 'samples': 221120, 'trn_loss': 15.0049, 'val_loss': 14.8249, 'total_time': 53.3, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:06:10,166] INFO   : {'epoch': 14.0, 'is_checkpoint': 1, 'steps': 238, 'samples': 238096, 'trn_loss': 14.9211, 'val_loss': 14.7256, 'total_time': 57.4, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:06:14,238] INFO   : {'epoch': 15.0, 'is_checkpoint': 1, 'steps': 255, 'samples': 255072, 'trn_loss': 14.8065, 'val_loss': 14.6816, 'total_time': 61.5, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:06:18,309] INFO   : {'epoch': 16.0, 'is_checkpoint': 1, 'steps': 272, 'samples': 272048, 'trn_loss': 14.7198, 'val_loss': 14.6277, 'total_time': 65.5, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:06:22,390] INFO   : {'epoch': 17.0, 'is_checkpoint': 1, 'steps': 289, 'samples': 289024, 'trn_loss': 14.6495, 'val_loss': 14.5723, 'total_time': 69.6, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:06:26,464] INFO   : {'epoch': 18.0, 'is_checkpoint': 1, 'steps': 306, 'samples': 306000, 'trn_loss': 14.579, 'val_loss': 14.5422, 'total_time': 73.7, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:06:30,598] INFO   : {'epoch': 19.0, 'is_checkpoint': 1, 'steps': 323, 'samples': 323408, 'trn_loss': 14.502, 'val_loss': 14.4855, 'total_time': 77.8, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:06:34,668] INFO   : {'epoch': 20.0, 'is_checkpoint': 1, 'steps': 340, 'samples': 340384, 'trn_loss': 14.4286, 'val_loss': 14.4698, 'total_time': 81.9, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:06:38,740] INFO   : {'epoch': 21.0, 'is_checkpoint': 1, 'steps': 357, 'samples': 357360, 'trn_loss': 14.3769, 'val_loss': 14.4306, 'total_time': 86.0, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:06:42,811] INFO   : {'epoch': 22.0, 'is_checkpoint': 1, 'steps': 374, 'samples': 374336, 'trn_loss': 14.3104, 'val_loss': 14.4152, 'total_time': 90.0, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:06:46,875] INFO   : {'epoch': 23.0, 'is_checkpoint': 1, 'steps': 391, 'samples': 391312, 'trn_loss': 14.2626, 'val_loss': 14.3888, 'total_time': 94.1, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:06:50,946] INFO   : {'epoch': 24.0, 'is_checkpoint': 1, 'steps': 408, 'samples': 408288, 'trn_loss': 14.2088, 'val_loss': 14.3621, 'total_time': 98.2, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:06:55,024] INFO   : {'epoch': 25.0, 'is_checkpoint': 1, 'steps': 425, 'samples': 425264, 'trn_loss': 14.167, 'val_loss': 14.3548, 'total_time': 102.2, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:06:59,093] INFO   : {'epoch': 26.0, 'is_checkpoint': 1, 'steps': 442, 'samples': 442240, 'trn_loss': 14.1229, 'val_loss': 14.3415, 'total_time': 106.3, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:07:03,166] INFO   : {'epoch': 27.0, 'is_checkpoint': 1, 'steps': 459, 'samples': 459216, 'trn_loss': 14.0856, 'val_loss': 14.3351, 'total_time': 110.4, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:07:07,245] INFO   : {'epoch': 28.0, 'is_checkpoint': 1, 'steps': 476, 'samples': 476192, 'trn_loss': 14.0519, 'val_loss': 14.3205, 'total_time': 114.5, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:07:11,314] INFO   : {'epoch': 29.0, 'is_checkpoint': 1, 'steps': 493, 'samples': 493168, 'trn_loss': 13.9986, 'val_loss': 14.3149, 'total_time': 118.5, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:07:15,305] INFO   : {'epoch': 30.0, 'is_checkpoint': 0, 'steps': 510, 'samples': 510144, 'trn_loss': 13.9545, 'val_loss': 14.3223, 'total_time': 122.5, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:07:19,375] INFO   : {'epoch': 31.0, 'is_checkpoint': 1, 'steps': 527, 'samples': 527120, 'trn_loss': 13.9418, 'val_loss': 14.2963, 'total_time': 126.6, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:07:23,377] INFO   : {'epoch': 32.0, 'is_checkpoint': 0, 'steps': 544, 'samples': 544096, 'trn_loss': 13.889, 'val_loss': 14.3211, 'total_time': 130.6, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:07:27,383] INFO   : {'epoch': 33.0, 'is_checkpoint': 0, 'steps': 561, 'samples': 561072, 'trn_loss': 13.8657, 'val_loss': 14.3053, 'total_time': 134.6, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:07:31,380] INFO   : {'epoch': 34.0, 'is_checkpoint': 0, 'steps': 578, 'samples': 578048, 'trn_loss': 13.8282, 'val_loss': 14.299, 'total_time': 138.6, 'learn_rate': 0.00566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:07:35,458] INFO   : {'epoch': 35.0, 'is_checkpoint': 1, 'steps': 595, 'samples': 595024, 'trn_loss': 13.7235, 'val_loss': 14.2482, 'total_time': 142.7, 'learn_rate': 0.001981, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:07:39,540] INFO   : {'epoch': 36.0, 'is_checkpoint': 1, 'steps': 612, 'samples': 612000, 'trn_loss': 13.6592, 'val_loss': 14.2374, 'total_time': 146.8, 'learn_rate': 0.001981, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:07:43,610] INFO   : {'epoch': 37.0, 'is_checkpoint': 0, 'steps': 629, 'samples': 629408, 'trn_loss': 13.6249, 'val_loss': 14.2395, 'total_time': 150.8, 'learn_rate': 0.001981, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:07:47,617] INFO   : {'epoch': 38.0, 'is_checkpoint': 0, 'steps': 646, 'samples': 646384, 'trn_loss': 13.5995, 'val_loss': 14.2448, 'total_time': 154.8, 'learn_rate': 0.001981, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:07:51,628] INFO   : {'epoch': 39.0, 'is_checkpoint': 0, 'steps': 663, 'samples': 663360, 'trn_loss': 13.582, 'val_loss': 14.2563, 'total_time': 158.9, 'learn_rate': 0.001981, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:07:55,702] INFO   : {'epoch': 40.0, 'is_checkpoint': 1, 'steps': 680, 'samples': 680336, 'trn_loss': 13.5499, 'val_loss': 14.2356, 'total_time': 162.9, 'learn_rate': 0.000693, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:07:59,773] INFO   : {'epoch': 41.0, 'is_checkpoint': 1, 'steps': 697, 'samples': 697312, 'trn_loss': 13.5204, 'val_loss': 14.2342, 'total_time': 167.0, 'learn_rate': 0.000693, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:08:03,782] INFO   : {'epoch': 42.0, 'is_checkpoint': 0, 'steps': 714, 'samples': 714288, 'trn_loss': 13.5073, 'val_loss': 14.2374, 'total_time': 171.0, 'learn_rate': 0.000693, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:08:07,792] INFO   : {'epoch': 43.0, 'is_checkpoint': 0, 'steps': 731, 'samples': 731264, 'trn_loss': 13.4891, 'val_loss': 14.2367, 'total_time': 175.0, 'learn_rate': 0.000693, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:08:11,793] INFO   : {'epoch': 44.0, 'is_checkpoint': 0, 'steps': 748, 'samples': 748240, 'trn_loss': 13.4923, 'val_loss': 14.2369, 'total_time': 179.0, 'learn_rate': 0.000693, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:08:15,806] INFO   : {'epoch': 45.0, 'is_checkpoint': 0, 'steps': 765, 'samples': 765216, 'trn_loss': 13.4887, 'val_loss': 14.2393, 'total_time': 183.0, 'learn_rate': 0.000566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:08:19,822] INFO   : {'epoch': 46.0, 'is_checkpoint': 0, 'steps': 782, 'samples': 782192, 'trn_loss': 13.4813, 'val_loss': 14.2411, 'total_time': 187.0, 'learn_rate': 0.000566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:08:23,698] INFO   : {'epoch': 47.0, 'is_checkpoint': 0, 'steps': 799, 'samples': 799168, 'trn_loss': 13.4766, 'val_loss': 14.244, 'total_time': 190.9, 'learn_rate': 0.000566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:08:27,699] INFO   : {'epoch': 48.0, 'is_checkpoint': 0, 'steps': 816, 'samples': 816144, 'trn_loss': 13.4572, 'val_loss': 14.2448, 'total_time': 194.9, 'learn_rate': 0.000566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:08:31,708] INFO   : {'epoch': 49.0, 'is_checkpoint': 0, 'steps': 833, 'samples': 833120, 'trn_loss': 13.4482, 'val_loss': 14.2436, 'total_time': 198.9, 'learn_rate': 0.000566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:08:35,730] INFO   : {'epoch': 50.0, 'is_checkpoint': 0, 'steps': 850, 'samples': 850096, 'trn_loss': 13.46, 'val_loss': 14.2466, 'total_time': 203.0, 'learn_rate': 0.000566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:08:39,746] INFO   : {'epoch': 51.0, 'is_checkpoint': 0, 'steps': 867, 'samples': 867072, 'trn_loss': 13.4411, 'val_loss': 14.2486, 'total_time': 207.0, 'learn_rate': 0.000566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:08:43,765] INFO   : early stopping: val_loss stopped improving
+[2025-07-09 08:08:43,765] INFO   : {'epoch': 52.0, 'is_checkpoint': 0, 'steps': 884, 'samples': 884048, 'trn_loss': 13.4418, 'val_loss': 14.2489, 'total_time': 211.0, 'learn_rate': 0.000566, 'dp_eps': None, 'dp_delta': None}
+[2025-07-09 08:08:43,773] INFO   : TRAIN_TABULAR finished in 214.93s
+✅ Model training completed
+
+🎭 Generating 20000 synthetic samples...
+[2025-07-09 08:08:43,783] INFO   : GENERATE_TABULAR started
+[2025-07-09 08:08:43,783] INFO   : create `sequential_training/SyntheticData`
+[2025-07-09 08:08:43,783] INFO   : is_sequential=True
+[2025-07-09 08:08:43,783] INFO   : has_context=True
+[2025-07-09 08:08:43,783] INFO   : len(tgt_sub_columns)=13
+[2025-07-09 08:08:43,783] INFO   : len(ctx_sub_columns)=0
+[2025-07-09 08:08:43,783] INFO   : enable_flexible_generation=False
+[2025-07-09 08:08:43,783] INFO   : device=device(type='cuda')
+[2025-07-09 08:08:43,783] INFO   : tgt_primary_key=None, tgt_context_key='group_id', ctx_primary_key='group_id'
+[2025-07-09 08:08:43,783] INFO   : imputation: None
+[2025-07-09 08:08:43,783] INFO   : rebalancing: None
+[2025-07-09 08:08:43,783] INFO   : fairness: None
+[2025-07-09 08:08:43,783] INFO   : sample_seed: None
+[2025-07-09 08:08:43,784] INFO   : gen_column_order=['tgt:/', 'tgt:t0/c0', 'tgt:t1/c1', 'tgt:t2/c2', 'tgt:t3/c3', 'tgt:t4/c4', 'tgt:t5/c5', 'tgt:t6/c6', 'tgt:t7/c7', 'tgt:t8/c8', 'tgt:t9/c9']
+[2025-07-09 08:08:43,784] INFO   : trn_column_order=['tgt:/', 'tgt:t0/c0', 'tgt:t1/c1', 'tgt:t2/c2', 'tgt:t3/c3', 'tgt:t4/c4', 'tgt:t5/c5', 'tgt:t6/c6', 'tgt:t7/c7', 'tgt:t8/c8', 'tgt:t9/c9']
+[2025-07-09 08:08:43,784] INFO   : rare_category_replacement_method=<RareCategoryReplacementMethod.constant: 'CONSTANT'>
+[2025-07-09 08:08:43,784] INFO   : imputation: []
+[2025-07-09 08:08:43,784] INFO   : rebalance_column: None
+[2025-07-09 08:08:43,784] INFO   : rebalance_probabilities: {}
+[2025-07-09 08:08:43,784] INFO   : sampling_temperature=1.0, sampling_top_p=1.0
+[2025-07-09 08:08:43,789] INFO   : generate new data based on context data `(20000, 1)`
+[2025-07-09 08:08:43,790] INFO   : batch_size heuristic: 10,000 (mem_available_gb=22.0GB, sample_kb=1.5KB, scaling_factor=0.1)
+[2025-07-09 08:08:43,790] INFO   : sample_size=20000
+[2025-07-09 08:08:43,790] INFO   : list(seed_data.columns)=[]
+[2025-07-09 08:08:43,790] INFO   : batch_size=10000
+[2025-07-09 08:08:43,790] INFO   : no_of_batches=2
+[2025-07-09 08:08:43,790] INFO   : create generative model
+[2025-07-09 08:08:43,800] INFO   : no_of_model_params=np.int64(1589346)
+[2025-07-09 08:08:43,817] INFO   : loaded model weights in 0.02s
+[2025-07-09 08:08:43,821] INFO   : generate 2 batches
+[2025-07-09 08:08:43,822] INFO   : encode context (10000, 2)
+[2025-07-09 08:08:43,824] INFO   : encode sample seed values (10000, 1)
+[2025-07-09 08:08:43,824] INFO   : sample data from model with context (10000, 2)
+[2025-07-09 08:08:45,482] INFO   : step_size: 10000 -> 8745
+[2025-07-09 08:08:46,079] INFO   : step_size: 8745 -> 7273
+[2025-07-09 08:08:46,590] INFO   : step_size: 7273 -> 6071
+[2025-07-09 08:08:47,022] INFO   : step_size: 6071 -> 3890
+[2025-07-09 08:08:47,351] INFO   : step_size: 3890 -> 809
+[2025-07-09 08:08:47,485] INFO   : encode context (10000, 2)
+[2025-07-09 08:08:47,487] INFO   : encode sample seed values (10000, 1)
+[2025-07-09 08:08:47,487] INFO   : sample data from model with context (10000, 2)
+[2025-07-09 08:08:49,095] INFO   : step_size: 10000 -> 8865
+[2025-07-09 08:08:49,694] INFO   : step_size: 8865 -> 7416
+[2025-07-09 08:08:50,213] INFO   : step_size: 7416 -> 6216
+[2025-07-09 08:08:50,654] INFO   : step_size: 6216 -> 4089
+[2025-07-09 08:08:50,993] INFO   : step_size: 4089 -> 882
+[2025-07-09 08:08:51,173] INFO   : decode generated data (154256, 11)
+[2025-07-09 08:08:52,976] INFO   : post-process generated data (154256, 11)
+[2025-07-09 08:08:53,114] INFO   : persisted (154256, 11) to `part.000000.000000.parquet` in 0.14s
+[2025-07-09 08:08:53,115] INFO   : GENERATE_TABULAR finished in 9.33s
+✅ Synthetic data generation completed
+
+📊 Evaluating synthetic data quality...
+✅ Generated 154256 synthetic samples
+
+💾 Results saved:
+   📊 Synthetic data: sequential_training/synthetic_data_sequential_submission.csv
+   📁 Full workspace: sequential_training
+
+✅ Best configuration run completed successfully!

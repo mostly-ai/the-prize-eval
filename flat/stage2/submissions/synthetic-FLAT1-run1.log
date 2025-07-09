@@ -1,0 +1,536 @@
+uv not found, installing now...
+downloading uv 0.7.19 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /home/ubuntu/.local/bin
+  uv
+  uvx
+everything's installed!
+
+To add $HOME/.local/bin to your PATH, either restart your shell or run:
+
+    source $HOME/.local/bin/env (sh, bash, zsh)
+    source $HOME/.local/bin/env.fish (fish)
+uv has been installed successfully.
+--- Creating Python virtual environment using uv ---
+Using CPython 3.12.3 interpreter at: /usr/bin/python3
+Creating virtual environment at: .venv
+Activate with: source .venv/bin/activate
+--- Installing dependencies from requirements.txt ---
+Resolved 248 packages in 909ms
+Downloading nvidia-cusparselt-cu12 (143.1MiB)
+Downloading nvidia-nvjitlink-cu12 (20.1MiB)
+Downloading nvidia-cuda-nvrtc-cu12 (23.5MiB)
+Downloading plotly (9.2MiB)
+Downloading sympy (5.9MiB)
+Downloading hf-xet (3.0MiB)
+Downloading nvidia-cuda-cupti-cu12 (13.2MiB)
+Downloading tokenizers (3.0MiB)
+Downloading pycountry (6.0MiB)
+Downloading opencv-python-headless (47.7MiB)
+Downloading botocore (13.0MiB)
+Downloading nvidia-cusolver-cu12 (122.0MiB)
+Downloading nvidia-nccl-cu12 (179.9MiB)
+Downloading networkx (1.9MiB)
+Downloading nvidia-cusparse-cu12 (197.8MiB)
+Downloading sqlalchemy (3.2MiB)
+Downloading nvidia-cudnn-cu12 (634.0MiB)
+Downloading nvidia-cufft-cu12 (201.7MiB)
+Downloading nvidia-curand-cu12 (53.7MiB)
+Downloading pycryptodomex (2.2MiB)
+Downloading scipy (35.6MiB)
+Downloading widgetsnbextension (2.1MiB)
+Downloading nvidia-cublas-cu12 (346.6MiB)
+Downloading grpcio (5.7MiB)
+Downloading mistral-common (6.2MiB)
+Downloading xgrammar (4.6MiB)
+Downloading transformers (10.3MiB)
+Downloading ray (65.7MiB)
+Downloading matplotlib (8.2MiB)
+Downloading llvmlite (40.4MiB)
+Downloading torchvision (6.9MiB)
+Downloading duckdb (20.1MiB)
+Downloading numpy (15.8MiB)
+Downloading torch (731.1MiB)
+Downloading triton (241.4MiB)
+Downloading cupy-cuda12x (100.4MiB)
+Downloading uvloop (4.5MiB)
+Downloading pillow (4.4MiB)
+Downloading llguidance (14.3MiB)
+Downloading pandas (12.1MiB)
+Downloading vllm (311.3MiB)
+Downloading scikit-learn (11.9MiB)
+Downloading xformers (42.2MiB)
+Downloading torchaudio (3.2MiB)
+Downloading bitsandbytes (63.9MiB)
+Downloading cryptography (4.3MiB)
+Downloading numba (3.7MiB)
+Downloading pyarrow (40.3MiB)
+Downloading fonttools (4.7MiB)
+Downloading mostlyai-qa (29.3MiB)
+ Downloading widgetsnbextension
+Downloading pydantic-core (1.9MiB)
+ Downloading pycryptodomex
+Downloading aiohttp (1.6MiB)
+ Downloading networkx
+Downloading jedi (1.5MiB)
+ Downloading tokenizers
+Downloading kiwisolver (1.4MiB)
+ Downloading hf-xet
+Downloading sentencepiece (1.2MiB)
+ Downloading sqlalchemy
+Downloading pygments (1.2MiB)
+ Downloading torchaudio
+Downloading setuptools (1.1MiB)
+ Downloading numba
+Downloading tiktoken (1.1MiB)
+ Downloading pydantic-core
+ Downloading aiohttp
+ Downloading cryptography
+ Downloading sentencepiece
+ Downloading pillow
+ Downloading kiwisolver
+ Downloading pygments
+ Downloading xgrammar
+ Downloading uvloop
+ Downloading setuptools
+ Downloading fonttools
+ Downloading tiktoken
+ Downloading grpcio
+ Downloading pycountry
+ Downloading sympy
+ Downloading mistral-common
+ Downloading torchvision
+ Downloading matplotlib
+ Downloading plotly
+ Downloading scikit-learn
+ Downloading pandas
+ Downloading jedi
+ Downloading transformers
+ Downloading nvidia-cuda-cupti-cu12
+ Downloading llguidance
+ Downloading numpy
+ Downloading botocore
+ Downloading nvidia-nvjitlink-cu12
+ Downloading duckdb
+ Downloading nvidia-cuda-nvrtc-cu12
+ Downloading mostlyai-qa
+ Downloading scipy
+ Downloading llvmlite
+ Downloading xformers
+ Downloading opencv-python-headless
+ Downloading nvidia-curand-cu12
+ Downloading bitsandbytes
+ Downloading pyarrow
+ Downloading nvidia-cusolver-cu12
+ Downloading nvidia-cusparselt-cu12
+ Downloading cupy-cuda12x
+ Downloading nvidia-cusparse-cu12
+ Downloading nvidia-cufft-cu12
+ Downloading nvidia-nccl-cu12
+ Downloading ray
+ Downloading triton
+ Downloading nvidia-cublas-cu12
+ Downloading vllm
+ Downloading nvidia-cudnn-cu12
+ Downloading torch
+Prepared 248 packages in 33.38s
+Installed 248 packages in 1.35s
+ + accelerate==1.8.1
+ + adlfs==2024.12.0
+ + aiobotocore==2.23.0
+ + aiohappyeyeballs==2.6.1
+ + aiohttp==3.12.13
+ + aioitertools==0.12.0
+ + aiosignal==1.3.2
+ + airportsdata==20250622
+ + annotated-types==0.7.0
+ + anyio==4.9.0
+ + astor==0.8.1
+ + asttokens==3.0.0
+ + attrs==25.3.0
+ + azure-common==1.1.28
+ + azure-core==1.34.0
+ + azure-datalake-store==0.0.53
+ + azure-identity==1.23.0
+ + azure-storage-blob==12.25.1
+ + azure-storage-file-datalake==12.20.0
+ + bcrypt==4.3.0
+ + bitsandbytes==0.46.0
+ + blake3==1.0.5
+ + boto3==1.38.27
+ + botocore==1.38.27
+ + cachetools==5.5.2
+ + certifi==2025.6.15
+ + cffi==1.17.1
+ + charset-normalizer==3.4.2
+ + click==8.2.1
+ + cloudpathlib==0.21.1
+ + cloudpickle==3.1.1
+ + comm==0.2.2
+ + compressed-tensors==0.9.3
+ + contourpy==1.3.2
+ + cryptography==45.0.4
+ + cupy-cuda12x==13.4.1
+ + cycler==0.12.1
+ + datasets==3.6.0
+ + decorator==5.2.1
+ + deprecated==1.2.18
+ + depyf==0.18.0
+ + dill==0.3.8
+ + diskcache==5.6.3
+ + distro==1.9.0
+ + dnspython==2.7.0
+ + duckdb==1.3.1
+ + einops==0.8.1
+ + email-validator==2.2.0
+ + environs==14.2.0
+ + et-xmlfile==2.0.0
+ + executing==2.2.0
+ + fastapi==0.115.14
+ + fastapi-cli==0.0.7
+ + fastrlock==0.8.3
+ + filelock==3.18.0
+ + fonttools==4.58.4
+ + frozenlist==1.7.0
+ + fsspec==2025.3.0
+ + gcsfs==2025.3.0
+ + gguf==0.17.1
+ + google-api-core==2.25.1
+ + google-auth==2.40.3
+ + google-auth-oauthlib==1.2.2
+ + google-cloud-core==2.4.3
+ + google-cloud-storage==3.1.1
+ + google-crc32c==1.7.1
+ + google-resumable-media==2.7.2
+ + googleapis-common-protos==1.70.0
+ + greenlet==3.2.3
+ + grpcio==1.73.1
+ + gunicorn==23.0.0
+ + h11==0.16.0
+ + hf-xet==1.1.5
+ + httpcore==1.0.9
+ + httptools==0.6.4
+ + httpx==0.28.1
+ + huggingface-hub==0.33.1
+ + idna==3.10
+ + importlib-metadata==8.0.0
+ + interegular==0.3.3
+ + ipython==9.3.0
+ + ipython-pygments-lexers==1.1.1
+ + ipywidgets==8.1.7
+ + isodate==0.7.2
+ + jedi==0.19.2
+ + jinja2==3.1.6
+ + jiter==0.10.0
+ + jmespath==1.0.1
+ + joblib==1.5.1
+ + json-repair==0.46.2
+ + jsonschema==4.24.0
+ + jsonschema-specifications==2025.4.1
+ + jupyterlab-widgets==3.0.15
+ + kiwisolver==1.4.8
+ + lark==1.2.2
+ + llguidance==0.7.30
+ + llvmlite==0.44.0
+ + lm-format-enforcer==0.10.11
+ + markdown-it-py==3.0.0
+ + markupsafe==3.0.2
+ + marshmallow==4.0.0
+ + matplotlib==3.10.3
+ + matplotlib-inline==0.1.7
+ + mdurl==0.1.2
+ + mistral-common==1.6.2
+ + model2vec==0.6.0
+ + mostlyai==4.7.8
+ + mostlyai-engine==1.4.5
+ + mostlyai-qa==1.9.7
+ + mpmath==1.3.0
+ + msal==1.32.3
+ + msal-extensions==1.3.1
+ + msgpack==1.1.1
+ + msgspec==0.19.0
+ + multidict==6.6.2
+ + multiprocess==0.70.16
+ + narwhals==1.44.0
+ + nest-asyncio==1.6.0
+ + networkx==3.5
+ + ninja==1.11.1.4
+ + numba==0.61.2
+ + numpy==2.2.6
+ + nvidia-cublas-cu12==12.4.5.8
+ + nvidia-cuda-cupti-cu12==12.4.127
+ + nvidia-cuda-nvrtc-cu12==12.4.127
+ + nvidia-cuda-runtime-cu12==12.4.127
+ + nvidia-cudnn-cu12==9.1.0.70
+ + nvidia-cufft-cu12==11.2.1.3
+ + nvidia-curand-cu12==10.3.5.147
+ + nvidia-cusolver-cu12==11.6.1.9
+ + nvidia-cusparse-cu12==12.3.1.170
+ + nvidia-cusparselt-cu12==0.6.2
+ + nvidia-nccl-cu12==2.21.5
+ + nvidia-nvjitlink-cu12==12.4.127
+ + nvidia-nvtx-cu12==12.4.127
+ + oauthlib==3.3.1
+ + opacus==1.5.4
+ + openai==1.93.0
+ + opencv-python-headless==4.11.0.86
+ + openpyxl==3.1.5
+ + opentelemetry-api==1.26.0
+ + opentelemetry-exporter-otlp==1.26.0
+ + opentelemetry-exporter-otlp-proto-common==1.26.0
+ + opentelemetry-exporter-otlp-proto-grpc==1.26.0
+ + opentelemetry-exporter-otlp-proto-http==1.26.0
+ + opentelemetry-proto==1.26.0
+ + opentelemetry-sdk==1.26.0
+ + opentelemetry-semantic-conventions==0.47b0
+ + opentelemetry-semantic-conventions-ai==0.4.9
+ + opt-einsum==3.4.0
+ + outlines==0.1.11
+ + outlines-core==0.1.26
+ + packaging==25.0
+ + pandas==2.2.3
+ + paramiko==3.5.1
+ + parso==0.8.4
+ + partial-json-parser==0.2.1.1.post6
+ + peft==0.15.2
+ + pexpect==4.9.0
+ + phik==0.12.4
+ + pillow==11.2.1
+ + plotly==6.2.0
+ + prometheus-client==0.22.1
+ + prometheus-fastapi-instrumentator==7.1.0
+ + prompt-toolkit==3.0.51
+ + propcache==0.3.2
+ + proto-plus==1.26.1
+ + protobuf==4.25.8
+ + psutil==5.9.8
+ + ptyprocess==0.7.0
+ + pure-eval==0.2.3
+ + py-cpuinfo==9.0.0
+ + pyarrow==20.0.0
+ + pyasn1==0.6.1
+ + pyasn1-modules==0.4.2
+ + pycountry==24.6.1
+ + pycparser==2.22
+ + pycryptodomex==3.23.0
+ + pydantic==2.11.7
+ + pydantic-core==2.33.2
+ + pygments==2.19.2
+ + pyjwt==2.10.1
+ + pynacl==1.5.0
+ + pyparsing==3.2.3
+ + python-dateutil==2.9.0.post0
+ + python-dotenv==1.1.1
+ + python-json-logger==3.3.0
+ + python-multipart==0.0.20
+ + pytz==2025.2
+ + pyyaml==6.0.2
+ + pyzmq==27.0.0
+ + ray==2.47.1
+ + referencing==0.36.2
+ + regex==2024.11.6
+ + requests==2.32.4
+ + requests-oauthlib==2.0.0
+ + rich==14.0.0
+ + rich-toolkit==0.14.7
+ + rpds-py==0.25.1
+ + rsa==4.9.1
+ + s3fs==2025.3.0
+ + s3transfer==0.13.0
+ + safetensors==0.5.3
+ + schema==0.7.7
+ + scikit-learn==1.7.0
+ + scipy==1.15.2
+ + semantic-version==2.10.0
+ + sentencepiece==0.2.0
+ + setuptools==80.9.0
+ + shellingham==1.5.4
+ + six==1.17.0
+ + smart-open==7.1.0
+ + sniffio==1.3.1
+ + sqlalchemy==2.0.41
+ + sqlparse==0.5.3
+ + sshtunnel==0.4.0
+ + stack-data==0.6.3
+ + starlette==0.46.2
+ + sympy==1.13.1
+ + threadpoolctl==3.6.0
+ + tiktoken==0.9.0
+ + tokenizers==0.21.2
+ + torch==2.6.0
+ + torchaudio==2.6.0
+ + torchvision==0.21.0
+ + tqdm==4.67.1
+ + traitlets==5.14.3
+ + transformers==4.53.0
+ + triton==3.2.0
+ + typer==0.16.0
+ + typing-extensions==4.14.0
+ + typing-inspection==0.4.1
+ + tzdata==2025.2
+ + urllib3==2.5.0
+ + uvicorn==0.34.3
+ + uvloop==0.21.0
+ + vllm==0.8.5.post1
+ + watchfiles==1.1.0
+ + wcwidth==0.2.13
+ + websockets==15.0.1
+ + widgetsnbextension==4.0.14
+ + wrapt==1.17.2
+ + xformers==0.0.29.post2
+ + xgrammar==0.1.18
+ + xlsxwriter==3.2.5
+ + xxhash==3.5.0
+ + yarl==1.20.1
+ + zipp==3.23.0
+--- Activating the virtual environment ---
+--- Running the main prediction script ---
+Training with 100000 Train Samples
+--- STEP 1: Generating Synthetic Data Pool ---
+Initializing Synthetic Data SDK 4.7.8 in LOCAL mode 🏠
+Connected to /home/ubuntu/mostlyai with 31 GB RAM, 8 CPUs, 1x NVIDIA A10G 
+available
+Add NA features for: ['rabbit', 'cow', 'loon', 'cloud']
+Starting Training Iteration 1/2
+Created generator efe535e9-7880-4f4e-af23-c10c9e0af4b9
+Started generator training
+<frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+<frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+Overall job progress                             ━━━━━━━━━━━━━━━━━━ 100% 0:35:12
+Step Baseline:tabular PULL_TRAINING_DATA         ━━━━━━━━━━━━━━━━━━ 100% 0:00:06
+Step Baseline:tabular ANALYZE_TRAINING_DATA      ━━━━━━━━━━━━━━━━━━ 100% 0:01:00
+Step Baseline:tabular ENCODE_TRAINING_DATA       ━━━━━━━━━━━━━━━━━━ 100% 0:00:14
+Step Baseline:tabular TRAIN_MODEL 💎             ━━━━━━━━━━━━━━━━━━ 100% 0:31:24
+Step Baseline:tabular GENERATE_MODEL_REPORT_DATA ━━━━━━━━━━━━━━━━━━ 100% 0:00:10
+Step Baseline:tabular CREATE_MODEL_REPORT        ━━━━━━━━━━━━━━━━━━ 100% 0:02:14
+                                                                                
+                                                                                
+                                                                                
+                      Training log for `Baseline:tabular`                       
+                                                                                
+        Epochs              Samples             Elapsed Time          Val Loss  
+ ────────────────────────────────────────────────────────────────────────────── 
+         12.00            1,908,579                    1327s          112.2173  
+         13.00            2,067,564                    1438s          112.0348  
+         14.00            2,226,549                    1548s          111.8711  
+         15.00            2,385,534                    1659s          111.7242  
+         16.00            2,544,519                    1770s          111.6724  
+         17.00            2,703,504                    1880s          111.4875  
+                                                                                🎉 Your generator is ready! Use it to create synthetic data. Publish it so 
+others can do the same.
+Generating data with generator from iteration 1
+Created synthetic dataset 16665e78-4685-47db-8765-93c89477175e with generator 
+efe535e9-7880-4f4e-af23-c10c9e0af4b9
+Started synthetic dataset generation
+<frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+<frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+Overall job progress                             ━━━━━━━━━━━━━━━━━━ 100% 0:04:52
+Step Baseline:tabular GENERATE_DATA_TABULAR      ━━━━━━━━━━━━━━━━━━ 100% 0:02:20
+Step Baseline:tabular CREATE_DATA_REPORT_TABULAR ━━━━━━━━━━━━━━━━━━ 100% 0:01:30
+Step common FINALIZE_GENERATION                  ━━━━━━━━━━━━━━━━━━ 100% 0:00:56
+Step common DELIVER_DATA                         ━━━━━━━━━━━━━━━━━━ 100% 0:00:00🎉 Your synthetic dataset is ready! Use it to consume the generated data. 
+Publish it so others can do the same.
+Accuracy for iteration 1: {'univariate_accuracy': np.float64(0.978200625), 'bivariate_accuracy': np.float64(0.9629459873417722), 'trivariate_accuracy': np.float64(0.945667503), 'overall_accuracy': np.float64(0.9622713717805907)}
+Starting Training Iteration 2/2
+Created generator 39ec15c0-3e68-4c7f-990d-6d273913ef0b
+Started generator training
+<frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+<frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+Overall job progress                             ━━━━━━━━━━━━━━━━━━ 100% 0:35:08
+Step Baseline:tabular PULL_TRAINING_DATA         ━━━━━━━━━━━━━━━━━━ 100% 0:00:06
+Step Baseline:tabular ANALYZE_TRAINING_DATA      ━━━━━━━━━━━━━━━━━━ 100% 0:01:00
+Step Baseline:tabular ENCODE_TRAINING_DATA       ━━━━━━━━━━━━━━━━━━ 100% 0:00:12
+Step Baseline:tabular TRAIN_MODEL 💎             ━━━━━━━━━━━━━━━━━━ 100% 0:31:22
+Step Baseline:tabular GENERATE_MODEL_REPORT_DATA ━━━━━━━━━━━━━━━━━━ 100% 0:00:10
+Step Baseline:tabular CREATE_MODEL_REPORT        ━━━━━━━━━━━━━━━━━━ 100% 0:02:12
+                                                                                
+                                                                                
+                                                                                
+                      Training log for `Baseline:tabular`                       
+                                                                                
+        Epochs              Samples             Elapsed Time          Val Loss  
+ ────────────────────────────────────────────────────────────────────────────── 
+         12.00            1,908,579                    1328s          112.4593  
+         13.00            2,067,564                    1438s          112.3112  
+         14.00            2,226,549                    1549s          112.1780  
+         15.00            2,385,534                    1660s          112.1125  
+         16.00            2,544,519                    1770s          111.9640  
+         17.00            2,703,504                    1881s          111.7699  
+                                                                                🎉 Your generator is ready! Use it to create synthetic data. Publish it so 
+others can do the same.
+Generating data with generator from iteration 2
+Created synthetic dataset ef4e6fcd-de4f-4cd1-bab4-6d9a99bdad19 with generator 
+39ec15c0-3e68-4c7f-990d-6d273913ef0b
+Started synthetic dataset generation
+<frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+<frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+Overall job progress                             ━━━━━━━━━━━━━━━━━━ 100% 0:04:52
+Step Baseline:tabular GENERATE_DATA_TABULAR      ━━━━━━━━━━━━━━━━━━ 100% 0:02:22
+Step Baseline:tabular CREATE_DATA_REPORT_TABULAR ━━━━━━━━━━━━━━━━━━ 100% 0:01:30
+Step common FINALIZE_GENERATION                  ━━━━━━━━━━━━━━━━━━ 100% 0:00:56
+Step common DELIVER_DATA                         ━━━━━━━━━━━━━━━━━━ 100% 0:00:00🎉 Your synthetic dataset is ready! Use it to consume the generated data. 
+Publish it so others can do the same.
+Accuracy for iteration 2: {'univariate_accuracy': np.float64(0.975572125), 'bivariate_accuracy': np.float64(0.9597017405063291), 'trivariate_accuracy': np.float64(0.9421527699999999), 'overall_accuracy': np.float64(0.959142211835443)}
+Combining data from all iterations into the final pool.
+Final combined data pool accuracy: {'univariate_accuracy': np.float64(0.9791225000000001), 'bivariate_accuracy': np.float64(0.9648532151898734), 'trivariate_accuracy': np.float64(0.948556473), 'overall_accuracy': np.float64(0.9641773960632912)}
+Synthetic data pool saved to pool_data/flat_intermediate_pre_trained_pool_20250708_0323.csv
+--- STEP 2: Selecting Best Subset via Post-processing ---
+--- Step 0: Binning data for IPF ---
+--- Step 1: Generating initial subset with IPF (top 5000 pairs) ---
+Function 'ipf_pairs_full' executed in 17.22 minutes.
+--- Step 2: Preparing IPF result for refinement ---
+IPF returned 125000 indices with 120695 unique ones.
+--- Accuracy of IPF-selected subset (before refinement) ---
+Overall accuracy: 0.9908469555949367
+--- Step 3: Trimming the subset ---
+Starting with the provided initial set...
+Initial solution error (normalized): 0.105198
+Iter  100/100000: Swap Size:  80, Num Elements 107645, Norm. L1 Err: 0.040177, Accuracy vs Original: 0.990714
+Iter  200/100000: Swap Size:   5, Num Elements 104295, Norm. L1 Err: 0.024619, Accuracy vs Original: 0.991218
+Iter  300/100000: Swap Size:   5, Num Elements 103795, Norm. L1 Err: 0.022478, Accuracy vs Original: 0.991167
+Iter  400/100000: Swap Size:   5, Num Elements 103295, Norm. L1 Err: 0.020395, Accuracy vs Original: 0.991328
+Iter  500/100000: Swap Size:   5, Num Elements 102795, Norm. L1 Err: 0.018389, Accuracy vs Original: 0.991498
+Iter  600/100000: Swap Size:   5, Num Elements 102295, Norm. L1 Err: 0.016478, Accuracy vs Original: 0.991447
+Iter  700/100000: Swap Size:   5, Num Elements 101795, Norm. L1 Err: 0.014701, Accuracy vs Original: 0.991620
+Iter  800/100000: Swap Size:   5, Num Elements 101295, Norm. L1 Err: 0.013112, Accuracy vs Original: 0.991865
+Iter  900/100000: Swap Size:   5, Num Elements 100795, Norm. L1 Err: 0.011712, Accuracy vs Original: 0.992037
+Iter 1000/100000: Swap Size:   5, Num Elements 100295, Norm. L1 Err: 0.010637, Accuracy vs Original: 0.992260
+Trimming stopped, remove last 5 elements
+Finished refinement in 1726.54 seconds.
+Function 'choose_rows_by_refinement' executed in 28.78 minutes.
+--- Accuracy of Trimming subset (subset size 100000) ---
+Overall accuracy: 0.9924154839029535
+Trimming returned 100000 indices with 100000 unique ones.
+--- Step 4: Refining the subset ---
+Current memory consumption: 16.02 GB
+Using train set with len 100000 rows to align to refinement target size 100000.
+Starting with the provided initial set...
+Initial solution error (normalized): 0.010330
+Iter  100/500: Swap Size:  44, Num Elements 100000, Norm. L1 Err: 0.009128, Accuracy vs Original: 0.992813
+Iter  200/500: Swap Size:  24, Num Elements 100000, Norm. L1 Err: 0.008757, Accuracy vs Original: 0.992729
+Iter  300/500: Swap Size:  16, Num Elements 100000, Norm. L1 Err: 0.008519, Accuracy vs Original: 0.992829
+Iter  400/500: Swap Size:   3, Num Elements 100000, Norm. L1 Err: 0.008348, Accuracy vs Original: 0.992755
+Iter  500/500: Swap Size:   3, Num Elements 100000, Norm. L1 Err: 0.008321, Accuracy vs Original: 0.992735
+Finished refinement in 745.20 seconds.
+Function 'choose_rows_by_refinement' executed in 12.42 minutes.
+Function 'select_rows_with_ipf_and_refinement' executed in 59.94 minutes.
+--- STEP 3: Final Evaluation ---
+Using Local Validation Metrics
+Accuracy of Initial Pool (Before):
+  - univariate_accuracy: 0.9795065
+  - bivariate_accuracy: 0.9654132088607597
+  - trivariate_accuracy: 0.9488584500000001
+  - overall_accuracy: 0.9645927196202532
+Accuracy of Refined Subset (After):
+  - univariate_accuracy: 0.9991442499999998
+  - bivariate_accuracy: 0.9954991455696202
+  - trivariate_accuracy: 0.9836749239999999
+  - overall_accuracy: 0.9927727731898733
+Quick Checks on Final Subset:
+  - Size: 100000
+  - All unique indices: True
+  - All unique data points: True
+--- STEP 4: Storing Final Result ---
+Final output saved to results/flat_result_20250708_0323.csv
+Pipeline completed successfully in 2.42 hours.
+--- Script finished successfully ---
