@@ -56,6 +56,6 @@ SEQU4,Tecnarca,andrey,6,g5.2xlarge,synthetic-SEQU4-run6.csv.gz,3931
 SEQU5,filomba01,abhishek,1,g5.2xlarge,synthetic-SEQU5-run1.csv.gz,243
 SEQU5,filomba01,abhishek,2,g5.2xlarge,synthetic-SEQU5-run2.csv.gz,242
 SEQU5,filomba01,abhishek,3,g5.2xlarge,synthetic-SEQU5-run3.csv.gz,243
-SEQU5,filomba01,michi,4,,synthetic-SEQU5-run4.csv.gz,
-SEQU5,filomba01,michi,5,,synthetic-SEQU5-run5.csv.gz,
-SEQU5,filomba01,michi,6,,synthetic-SEQU5-run6.csv.gz
+SEQU5,filomba01,michi,4,g5.2xlarge,synthetic-SEQU5-run4.csv.gz,336
+SEQU5,filomba01,michi,5,g5.2xlarge,synthetic-SEQU5-run5.csv.gz,311
+SEQU5,filomba01,michi,6,g5.2xlarge,synthetic-SEQU5-run6.csv.gz,318
