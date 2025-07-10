@@ -41,9 +41,9 @@ SEQU2,Benels,abhishek,3,g5.2xlarge,synthetic-SEQU2-run3.csv.gz,194
 SEQU2,Benels,michi,4,g5.2xlarge,synthetic-SEQU2-run4.csv.gz,190
 SEQU2,Benels,michi,5,g5.2xlarge,synthetic-SEQU2-run5.csv.gz,190
 SEQU2,Benels,michi,6,g5.2xlarge,synthetic-SEQU2-run6.csv.gz,190
-SEQU3,EugenioTL,shripad,1,,synthetic-SEQU3-run1.csv.gz,
-SEQU3,EugenioTL,shripad,2,,synthetic-SEQU3-run2.csv.gz,
-SEQU3,EugenioTL,shripad,3,,synthetic-SEQU3-run3.csv.gz,
+SEQU3,EugenioTL,shripad,1,g5.2xlarge,synthetic-SEQU3-run1.csv.gz,438
+SEQU3,EugenioTL,shripad,2,g5.2xlarge,synthetic-SEQU3-run2.csv.gz,454
+SEQU3,EugenioTL,shripad,3,g5.2xlarge,synthetic-SEQU3-run3.csv.gz,440
 SEQU3,EugenioTL,mario,4,g5.2xlarge,synthetic-SEQU3-run4.csv.gz,432
 SEQU3,EugenioTL,mario,5,g5.2xlarge,synthetic-SEQU3-run5.csv.gz,430
 SEQU3,EugenioTL,mario,6,g5.2xlarge,synthetic-SEQU3-run6.csv.gz,432
