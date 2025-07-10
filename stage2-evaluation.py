@@ -56,11 +56,11 @@ files = list(Path('.').glob('*/stage2/submissions/*.json'))
 metrics = pd.DataFrame([flatten_metrics(f) for f in files])
 
 # merge metrics with results
-results = pd.read_csv('results.csv')
+results = pd.read_csv('stage2-results.csv')
 results = results.drop(columns=[c for c in metrics.columns if c != 'file'], errors='ignore')
 
 df = pd.merge(results, metrics, on='file', how='left')
-df.to_csv('results.csv', index=False)
+df.to_csv('stage2-results.csv', index=False)
 print('saved metrics to results.csv')
 
 
@@ -155,7 +155,7 @@ def plot_accuracy_by_participant(
     print(f'saved plot to {filename}')
 
 # Load the data
-df = pd.read_csv('results.csv')
+df = pd.read_csv('stage2-results.csv')
 
 # FLAT chart
 plot_accuracy_by_participant(
