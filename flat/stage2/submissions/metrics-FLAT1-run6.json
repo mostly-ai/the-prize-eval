@@ -1,0 +1,32 @@
+{
+    "accuracy": {
+        "overall": 0.9913232,
+        "univariate": 0.9978326,
+        "bivariate": 0.9935683,
+        "trivariate": 0.9825686,
+        "coherence": null,
+        "overall_max": 0.9900352,
+        "univariate_max": 0.9969423,
+        "bivariate_max": 0.9919642,
+        "trivariate_max": 0.9811991,
+        "coherence_max": null
+    },
+    "similarity": {
+        "cosine_similarity_training_synthetic": 0.9999932,
+        "cosine_similarity_training_holdout": 0.9999854,
+        "discriminator_auc_training_synthetic": 0.498,
+        "discriminator_auc_training_holdout": 0.5
+    },
+    "distances": {
+        "ims_training": 0.0,
+        "ims_holdout": 0.0,
+        "ims_trn_hol": 0.0,
+        "dcr_training": 0.103,
+        "dcr_holdout": 0.103,
+        "dcr_trn_hol": 0.098,
+        "dcr_share": 0.505,
+        "nndr_training": 0.118848937477,
+        "nndr_holdout": 0.094870969545,
+        "nndr_trn_hol": 0.051834650729
+    }
+}
