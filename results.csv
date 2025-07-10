@@ -7,7 +7,7 @@ FLAT1,Gandagorn,michi,5,g5.2xlarge,synthetic-FLAT1-run5.csv,8712
 FLAT1,Gandagorn,michi,6,g5.2xlarge,synthetic-FLAT1-run6.csv.gz,8568
 FLAT2,Tecnarca,shripad,1,g5.2xlarge,synthetic-FLAT2-run1.csv.gz,12909
 FLAT2,Tecnarca,shripad,2,g5.2xlarge,synthetic-FLAT2-run2.csv.gz,13020
-FLAT2,Tecnarca,shripad,3,,synthetic-FLAT2-run3.csv.gz,
+FLAT2,Tecnarca,shripad,3,g5.2xlarge,synthetic-FLAT2-run3.csv.gz,13199
 FLAT2,Tecnarca,mario,4,g5.2xlarge,synthetic-FLAT2-run4.csv.gz,12959
 FLAT2,Tecnarca,mario,5,g5.2xlarge,synthetic-FLAT2-run5.csv.gz,12253
 FLAT2,Tecnarca,mario,6,g5.2xlarge,synthetic-FLAT2-run6.csv.gz,12275
