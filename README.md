@@ -24,3 +24,6 @@ During stage 2 the top 5 leaders of stage 1 were invited to submit their code su
 | ![Stage 2 Flat](./stage2-flat.png) | ![Stage 2 Sequential](./stage2-sequential.png) |
 | **Code Sumissions**<br/>- [Gandagorn / mostlyai_flat](https://github.com/Gandagorn/mostlyai_flat)<br />- [Tecnarca / mostlyai-engine-prize](https://github.com/Tecnarca/mostlyai-engine-prize)<br />- [muellermarkus / mostly_ai_prize](https://github.com/muellermarkus/mostly_ai_prize)<br />- [Benels / MostlyAI-challenge-submission-Benels](https://github.com/Benels/MostlyAI-challenge-submission-Benels)<br />- [EugenioTL / mostlyai-engine-custom](https://github.com/EugenioTL/mostlyai-engine-custom) | **Code Sumissions**<br/>- [Gandagorn / mostlyai_seq](https://github.com/Gandagorn/mostlyai_seq)<br />- [Tecnarca / mostlyai-engine-prize](https://github.com/Tecnarca/mostlyai-engine-prize)<br />- [EugenioTL / mostlyai-engine-custom](https://github.com/EugenioTL/mostlyai-engine-custom)<br />- [filomba01 / mostly-ai-competition](https://github.com/filomba01/mostly-ai-competition)<br />- [Benels / MostlyAI-challenge-submission-Benels](https://github.com/Benels/MostlyAI-challenge-submission-Benels) |
 
+## Competition Website
+
+![The MOSTLY AI Prize](./website.png)
