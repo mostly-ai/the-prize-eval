@@ -7,7 +7,7 @@ The official repository of the [MOSTLY AI](https://mostly.ai/) prize, a **2x $50
 | **The FLAT DATA Challenge** | - 100,000 records<br> - 80 data columns<br> - 60 numeric, 20 categorical                                        | - [Training Data](flat/stage1/flat-training.csv.gz)<br> - [Holdout Data](flat/stage1/flat-holdout.csv.gz)<br>.             | - [Training Data](flat/stage2/flat-training.csv.gz)<br> - [Holdout Data](flat/stage2/flat-holdout.csv.gz)<br> - [Evaluation Runs](flat/stage2/submissions/)  |
 | **The SEQUENTIAL DATA Challenge** | - 20,000 groups<br> - 5–10 records each<br> - 10 data columns<br> - 7 numeric, 3 categorical                        | - [Training Data](sequential/stage1/sequential-training.csv.gz)<br> - [Holdout Data](sequential/stage1/sequential-holdout.csv.gz)<br>. | - [Training Data](sequential/stage2/sequential-training.csv.gz)<br> - [Holdout Data](sequential/stage2/sequential-holdout.csv.gz)<br> - [Evaluation Runs](sequential/stage2/submissions/)              |
 
-A BIG thank you to all participants for pushing the boundaries of synthetic data further, and acchieving new **state-of-the-art accuracy** for large scale synthetic datasets with open-source solutions! ⭐ 
+A BIG thank you to all participants for pushing the boundaries of synthetic data further, and achieving new **state-of-the-art accuracy** for large scale synthetic datasets with open-source solutions! ⭐ 
 
 And a HUGE congratulations to [Gandagorn](https://github.com/Gandagorn) 🥇 for winning the total prize of $100,000! 🎉
 
